@@ -185,7 +185,31 @@
         }
       });
     });
-  </script>
+  
+ // Interatividade dos botões "Assistir"
+  const botoesAssistir = document.querySelectorAll(".movie-card .btn:not(.btn-secondary)");
+  botoesAssistir.forEach(botao => {
+    botao.addEventListener("click", () => {
+      const titulo = botao.closest(".movie-card").querySelector("h4").textContent;
+      alert("Você clicou em Assistir: " + titulo + " 🎥");
+    });
+  });
+
+  // Busca simples (simulação)
+  document.getElementById("btnBusca").addEventListener("click", () => {
+    const termo = document.getElementById("busca").value.toLowerCase();
+    const filmes = document.querySelectorAll(".movie-card h4");
+
+    filmes.forEach(filme => {
+      const card = filme.closest(".movie-card");
+      if (filme.textContent.toLowerCase().includes(termo) || termo === "") {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
