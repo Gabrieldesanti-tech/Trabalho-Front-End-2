@@ -1,0 +1,8 @@
+meu_site/
+│
+├── app.py              # Back-end em Python (Flask)
+├── templates/
+│   └── index.html      # Página HTML
+└── static/
+    └── style.css       # Estilos CSS
+interatividade no java script 
