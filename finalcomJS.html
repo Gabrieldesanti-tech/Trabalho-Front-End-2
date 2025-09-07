@@ -163,7 +163,7 @@
   </footer>
 
   <script>
-    // Interatividade dos botões "Minha Lista"
+    
     const botoesLista = document.querySelectorAll(".add-list");
     botoesLista.forEach(botao => {
       botao.addEventListener("click", () => {
@@ -171,7 +171,7 @@
       });
     });
 
-    // Busca simples (simulação)
+    
     document.getElementById("btnBusca").addEventListener("click", () => {
       const termo = document.getElementById("busca").value.toLowerCase();
       const filmes = document.querySelectorAll(".movie-card h4");
@@ -186,7 +186,7 @@
       });
     });
   
- // Interatividade dos botões "Assistir"
+ 
   const botoesAssistir = document.querySelectorAll(".movie-card .btn:not(.btn-secondary)");
   botoesAssistir.forEach(botao => {
     botao.addEventListener("click", () => {
@@ -195,7 +195,7 @@
     });
   });
 
-  // Busca simples (simulação)
+  
   document.getElementById("btnBusca").addEventListener("click", () => {
     const termo = document.getElementById("busca").value.toLowerCase();
     const filmes = document.querySelectorAll(".movie-card h4");
